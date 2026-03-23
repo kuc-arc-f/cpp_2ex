@@ -1,7 +1,6 @@
 #pragma once
 using json = nlohmann::json;
 
-std::string DB_PATH = "./todo.db";
 
 // ─────────────────────────────────────────
 // データ構造
@@ -132,9 +131,8 @@ public:
     void todos_list_handler(httplib::Response& res) {
         std::string ret = "";
         try{
-            MyTodo db(DB_PATH);
-            auto todos = db.list("all");
-            auto resp = db.todos_to_json(todos);
+            auto todos = list("all");
+            auto resp = todos_to_json(todos);
             res.status = 201;
             res.set_content(resp, "application/json");
         } catch (const std::exception& e) {

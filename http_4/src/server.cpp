@@ -15,6 +15,8 @@
 
 using json = nlohmann::json;
 
+std::string DB_PATH = "./todo.db";
+
 // インメモリストレージ
 static std::vector<Todo> g_todos;
 static std::mutex        g_mutex;
