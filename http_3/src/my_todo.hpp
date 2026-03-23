@@ -1,8 +1,6 @@
 #pragma once
 using json = nlohmann::json;
 
-std::string DB_PATH = "./todo.db";
-
 // ─────────────────────────────────────────
 // データ構造
 // ─────────────────────────────────────────
@@ -19,6 +17,7 @@ struct Todo {
 class MyTodo {
 public:
     explicit MyTodo(const std::string& path) {
+        //std::cout << "DB_PATH=" << path << " \n";
         if (sqlite3_open(path.c_str(), &db_) != SQLITE_OK)
             die("open");
         exec("PRAGMA journal_mode=WAL;");
@@ -132,9 +131,8 @@ public:
     void todos_list_handler(httplib::Response& res) {
         std::string ret = "";
         try{
-            MyTodo db(DB_PATH);
-            auto todos = db.list("all");
-            auto resp = db.todos_to_json(todos);
+            auto todos = list("all");
+            auto resp = todos_to_json(todos);
             res.status = 201;
             res.set_content(resp, "application/json");
         } catch (const std::exception& e) {
@@ -214,6 +212,7 @@ public:
 
 private:
     sqlite3* db_ = nullptr;
+    std::string db_path;
 
     void exec(const std::string& sql) {
         char* err = nullptr;
