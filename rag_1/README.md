@@ -60,3 +60,5 @@ g++ -std=c++17 -o embed embed.cpp -lcurl -lpqxx -lpq
 ***
 ### Blog
 
+https://zenn.dev/knaka0209/scraps/9c41482e550b74
+
