@@ -56,6 +56,8 @@ g++ -std=c++17 -o embed embed.cpp -lcurl -lpqxx -lpq
 ./search hello
 ```
 
+***
+* table pgvector: ./table.sql
 
 ***
 ### Blog
