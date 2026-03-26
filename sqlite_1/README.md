@@ -28,8 +28,11 @@ sudo apt install libsqlite3-dev
 
 ```
 make
+
+./todo
 ```
-* nect action
+
+* next action
 ```
 #list
 list
