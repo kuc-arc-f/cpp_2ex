@@ -58,3 +58,4 @@ g++ -std=c++17 -o search search.cpp -lcurl -luuid
 ***
 ### Blog
 
+https://zenn.dev/knaka0209/scraps/48712a328b6a96
