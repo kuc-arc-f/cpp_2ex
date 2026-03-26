@@ -45,3 +45,5 @@ g++ -std=c++17 -o discord_post main.cpp -lcurl
 ***
 ### Blog
 
+https://zenn.dev/knaka0209/scraps/23892e1c247329
+
