@@ -8,9 +8,9 @@
 
 ***
 
-C++ RAG Search, Qdrant DB + llama.cpp
+C++ RAG Search , Qdrant DB + llama.cpp
 
-* modl: Qwen3.5-2B-Q4_K_S.gguf
+* model: Qwen3.5-2B-Q4_K_S.gguf
 * Embedding-model : Qwen3-Embedding-0.6B-Q8_0.gguf
 * llama.cpp , llama-server 
 * gcc version 14.2.0 
@@ -78,3 +78,4 @@ g++ -std=c++17 -o search search.cpp -lcurl -luuid
 ***
 ### Blog
 
+https://zenn.dev/knaka0209/scraps/87fb7877c88c78
