@@ -121,3 +121,5 @@ curl -X POST http://localhost:8000/search \
 ***
 ### Blog
 
+https://zenn.dev/knaka0209/scraps/2b365f750cc0a7
+
