@@ -60,3 +60,5 @@ g++ -std=c++17 -I/usr/include/postgresql -Wall -Wextra -o todo main.cpp -lpq
 ***
 ### Blog
 
+https://zenn.dev/knaka0209/scraps/3e0b001441c06e
+
