@@ -98,3 +98,5 @@ curl -X DELETE http://localhost:8000/todos/1
 ***
 ### Blog
 
+https://zenn.dev/knaka0209/scraps/fe734701aad614
+
