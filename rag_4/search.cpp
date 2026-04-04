@@ -113,8 +113,11 @@ int main(int argc, char* argv[])
         for (const auto& r : results) {
             std::cout << "  score: " << std::fixed << std::setprecision(4) << r.score
                       << "\n";
+            std::cout << "r.score=" << r.score << "\n";
             std::string content = r.payload["content"].get<std::string>();
-            matches = content;
+            if(r.score > 0.4) {
+                matches = content;
+            }
         }
         std::cout << "\n";
 
