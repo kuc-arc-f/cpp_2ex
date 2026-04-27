@@ -86,7 +86,7 @@ public:
         std::string sql = "SELECT id, title, done, created_at FROM todos";
         if (filter == "pending")  sql += " WHERE done = 0";
         if (filter == "done")     sql += " WHERE done = 1";
-        sql += " ORDER BY id;";
+        sql += " ORDER BY id DESC;";
 
         sqlite3_stmt* s;
         prepare(sql, &s);
