@@ -36,8 +36,9 @@ sudo apt-get install libsqlite3-dev
 
 ***
 * build
+
 ```
-make all
+g++ -std=c++17 -o http_client http_client.cpp -lcurl
 ```
 
 * start
